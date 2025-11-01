@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   DIGITALOCEAN APP PLATFORM DESIGN TOKENS
+   ========================================================================== */
+
+:root {
+  /* ====== COLOR SYSTEM ====== */
+  /* Brand / Primary */
+  --color-primary: #0069ff;
+  --color-primary-hover: #0061eb;
+  --color-accent-blue: #3a60d6;
+
+  /* Background / Surface */
+  --color-bg: #f1f1f1;
+  --color-surface: #ffffff;
+  --color-surface-alt: #ececec;
+  --color-border: #dfdfdf;
+
+  /* Text */
+  --color-text: #212121;
+  --color-text-secondary: #676767;
+  --color-text-inverse: #ffffff;
+  --color-heading: #031b4e;
+
+  /* Status */
+  --color-success: #15cd72;
+  --color-warning: #fa8a4c;
+  --color-warning-bg: #ffe1a5;
+  --color-danger: #ed4f32;
+  --color-info: #00d7d2;
+
+  /* Shadows / Overlay */
+  --color-shadow: rgba(51, 51, 51, 0.2);
+  --color-overlay: rgba(51, 51, 51, 0.75);
+
+  /* ====== SPACING SCALE (4px base) ====== */
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-24: 96px;
+  --space-26: 104px;
+  --space-54: 216px;
+
+  /* ====== TYPOGRAPHY ====== */
+  --font-sans: "Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --text-display-size: 48px;
+  --text-display-line: 60px;
+  --text-display-weight: 700;
+
+  --text-h1-size: 24px;
+  --text-h1-line: 30px;
+  --text-h1-weight: 600;
+
+  --text-h2-size: 16px;
+  --text-h2-line: 36px;
+  --text-h2-weight: 600;
+
+  --text-body-size: 16px;
+  --text-body-line: 24px;
+  --text-body-weight: 400;
+
+  --text-body-sm-size: 14px;
+  --text-body-sm-line: 21px;
+  --text-body-sm-weight: 400;
+
+  --text-label-size: 14px;
+  --text-label-line: 21px;
+  --text-label-weight: 600;
+
+  --text-caption-size: 12.8px;
+  --text-caption-line: 12.8px;
+  --text-caption-weight: 600;
+
+  /* ====== RADII ====== */
+  --radius-none: 0;
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 10px;
+  --radius-xl: 20px;
+  --radius-full: 50%;
+
+  /* ====== SHADOWS ====== */
+  --shadow-xs: rgba(0, 0, 0, 0.03) 1px 2px 4px 0px;
+  --shadow-md: rgba(3, 27, 78, 0.16) 0px 1px 2px 0px,
+               rgba(3, 27, 78, 0.2) 0px 1px 3px 0px;
+  --shadow-focus: rgb(255, 255, 255) 0px 0px 0px 2px;
+
+  /* ====== TRANSITIONS ====== */
+  --ease-standard: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-linear: linear;
+  --ease-in-out: ease-in-out;
+
+  --duration-fast: 150ms;
+  --duration-medium: 250ms;
+  --duration-slow: 400ms;
+
+  --transition-base: all var(--duration-medium) var(--ease-standard);
+  --transition-color: color var(--duration-fast) var(--ease-standard);
+  --transition-shadow: box-shadow var(--duration-medium) var(--ease-standard);
+}
+
+/* Default body styles */
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+}
